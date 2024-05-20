@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Beli">
+        <ImageView
+            android:id="@+id/iv1"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/logo"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="100dp"></ImageView>
+
+    <LinearLayout
+        android:id="@+id/ll2"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/iv1"
+        android:orientation="horizontal"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp">
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/id"
+            android:visibility="gone"
+            />
+        <EditText
+            android:id="@+id/namaA"
+            android:layout_width="match_parent"
+            android:hint="Nama"
+            android:textColorHint="@color/black"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:inputType="textEmailAddress"
+            android:paddingLeft="10dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll3"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ll2"
+        android:orientation="horizontal"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp">
+        <EditText
+            android:id="@+id/jenismakananA"
+            android:layout_width="match_parent"
+            android:hint="Jenis Makanan"
+            android:textColorHint="@color/black"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:inputType="textEmailAddress"
+            android:paddingLeft="10dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll4"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ll3"
+        android:orientation="horizontal"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp">
+        <EditText
+            android:id="@+id/jumlahA"
+            android:layout_width="match_parent"
+            android:hint="Jumlah"
+            android:textColorHint="@color/black"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:inputType="textEmailAddress"
+            android:paddingLeft="10dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll5"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ll4"
+        android:orientation="horizontal"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp">
+
+
+        <Button
+            android:id="@+id/buttonsubmit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Kirim"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:backgroundTint="#03A9F4"/>
+
+    </LinearLayout>
+
+</RelativeLayout>
